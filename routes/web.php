@@ -26,10 +26,3 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('/films', 'HomeController@films');
 });
 
-
-Route::get('/test', function() {
-    $info = file_get_contents('http://hh.zebratarget.ru/genre/2');
-    $info = json_decode($info, true);
-    dd($info);
-});
-
