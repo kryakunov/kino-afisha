@@ -17,7 +17,6 @@ class GenreSeeder extends Seeder
             ['title' => 'Комедия'],
             ['title' => 'Драма'],
             ['title' => 'Триллер'],
-            ['title' => 'Драма'],
         ]);
     }
 }
