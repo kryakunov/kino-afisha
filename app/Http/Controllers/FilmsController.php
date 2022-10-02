@@ -107,6 +107,9 @@ class FilmsController extends Controller
         $film = Film::find($id);
         $film->delete();
 
+        $filmGenre = FilmGenre::where('film_id', '=', $id);
+        $filmGenre->delete();
+        
         return redirect()->route('films.index');
     }
 }
